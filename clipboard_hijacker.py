@@ -322,7 +322,7 @@ def main():
             pass
         sys.exit(0)
 
-if __name__ == "__main__"
+if __name__ == "__main__":
     print("Executing is not allowed.")
     system("pause")
     sys.exit(0)
@@ -345,4 +345,5 @@ if __name__ == "__main__"
 # It also has a fake optimization window that will show when the script is run without any arguments. The code is really bad and full of dumb ways to do things, but it works, even if it is really bad, but it is what it is.
 
 # so we (endreached only) TeamStella decided to publish this code to github to raise awareness about clipboard hijackers and how they work, and also to show how bad the coding style of the attacker is, but it is what it is.
+
 

